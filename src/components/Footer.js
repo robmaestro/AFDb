@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
     return (
         <>
-        <nav className="navbar fixed-bottom navbar-dark bg-dark">
+        <nav className="navbar navbar-dark bg-dark">
             <div className="container-fluid">
             <div>
 
