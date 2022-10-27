@@ -3,7 +3,7 @@ import React from "react";
 export default function Header() {
     return (
         <>
-    <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-sm">
 	  <div className="container-fluid">	    
 		<div className="collapse navbar-collapse " id="navbarSupportedContent">
 		  <div className="mx-auto">

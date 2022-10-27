@@ -9,7 +9,9 @@
     gap:50px;
     font-family: 'Roboto', sans-serif;
 }
-
+.navbar{
+    background-color: rgba(0,0,0,0);
+}
 .banner-header {
     display: flex;
     align-items: center;
