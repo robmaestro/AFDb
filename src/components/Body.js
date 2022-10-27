@@ -6,7 +6,8 @@ export default function Body() {
         <>
             <div className="main-body">
                 <div className="banner-header">
-                    <Header/>
+                    
+                <Header />
                     <span className="banner-header-title">What are you watching today?</span>
                     <div id="banner-images" className="carousel slide" data-bs-ride="true">
 

@@ -13,7 +13,7 @@ export default function Header() {
                                     <img src="./icon.png" alt="" width="30" height="24" />
                                 </a>
                                 <li className="nav-item">
-                                    <a className="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">SIGN IN</a>
+                                    <a className="nav-link " data-bs-toggle="modal" data-bs-target="#exampleModal">SIGN IN</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">CREATE ACCOUNT</a>
