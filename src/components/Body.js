@@ -1,10 +1,12 @@
 import React from "react";
+import Header from './Header'
 
 export default function Body() {
     return (
         <>
             <div className="main-body">
                 <div className="banner-header">
+                    <Header/>
                     <span className="banner-header-title">What are you watching today?</span>
                     <img className="image-banner" src="https://api.time.com/wp-content/uploads/2014/11/interstellar.jpg?quality=85&w=3600" alt="banner" />
                 </div>
