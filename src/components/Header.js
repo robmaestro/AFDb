@@ -13,16 +13,16 @@ export default function Header() {
                                     <img src="./icon.png" alt="" width="30" height="24" />
                                 </a>
                                 <li className="nav-item">
-                                    <a className="nav-link " data-bs-toggle="modal" data-bs-target="#exampleModal">SIGN IN</a>
+                                    <a className="nav-link display-6" data-bs-toggle="modal" data-bs-target="#exampleModal">SIGN IN</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">CREATE ACCOUNT</a>
+                                    <a className="nav-link display-6" data-bs-toggle="modal" data-bs-target="#staticBackdrop">CREATE ACCOUNT</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">FILMS</a>
+                                    <a className="nav-link display-6" href="#">FILMS</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">LISTS</a>
+                                    <a className="nav-link display-6" href="#">LISTS</a>
                                 </li>
                             </ul>
                         </div>
