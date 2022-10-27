@@ -8,8 +8,44 @@ export default function Body() {
                 <div className="banner-header">
                     <Header/>
                     <span className="banner-header-title">What are you watching today?</span>
-                    <img className="image-banner" src="https://api.time.com/wp-content/uploads/2014/11/interstellar.jpg?quality=85&w=3600" alt="banner" />
+                    <div id="banner-images" className="carousel slide" data-bs-ride="true">
+
+                        <div className="carousel-inner">
+                            <div className="carousel-item active">
+                                <img src="https://api.time.com/wp-content/uploads/2014/11/interstellar.jpg?quality=85&w=3600" className="d-block image-banner" alt="..." />
+                                <div class="carousel-caption">
+                                    <h1>INTERSTELLAR</h1>
+                                    <p>2014 Dir. by: Christopher Nolan</p>
+                                </div>
+                            </div>
+                            <div className="carousel-item">
+                                <img src="https://m.media-amazon.com/images/M/MV5BMTMwNzExNDk1Ml5BMl5BanBnXkFtZTcwNTYyMTE0NQ@@._V1_.jpg" className="d-block image-banner" alt="..." />
+                                <div class="carousel-caption">
+                                    <h1>LA HAINE</h1>
+                                    <p>1995 Dir. by: Mathieu Kassovitz</p>
+                                </div>
+                            </div>
+                            <div className="carousel-item">
+                                <img src="https://snworksceo.imgix.net/rce/eb5fe1d1-74e9-4076-969e-59212727451a.sized-1000x1000.webp?w=1000" className="d-block image-banner" alt="..." />
+                                <div class="carousel-caption">
+                                    <h3>THE BATMAN</h3>
+                                    <p>2022 Dir. by: Matt Reeves</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button className="carousel-control-prev" type="button" data-bs-target="#banner-images" data-bs-slide="prev">
+                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Previous</span>
+                        </button>
+                        <button className="carousel-control-next" type="button" data-bs-target="#banner-images" data-bs-slide="next">
+                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Next</span>
+                        </button>
+
+                    </div>
                 </div>
+
                 <div className="featured-movies">
                     <div>
                         <span>FEATURED MOVIES</span>
@@ -60,7 +96,7 @@ export default function Body() {
                         <span>DON'T HAVE AN ACCOUNT? SIGN UP! IT'S FREE</span>
                     </div>
                     <div className="browse-movies-content">
-                        
+
                     </div>
                 </div>
             </div>
