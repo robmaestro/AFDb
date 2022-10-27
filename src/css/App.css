@@ -20,7 +20,14 @@
     gap:10px;
 }
 
-.banner-header-title{
+
+#caHolder{
+    width: 100%;
+    margin: 2% 0%
+}
+
+.caBody{
+    padding: 2% 10%;
 }
 
 .image-banner{
