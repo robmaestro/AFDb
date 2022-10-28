@@ -10,21 +10,21 @@ export default function Body() {
 
                         <div className="carousel-inner">
                             <div className="carousel-item active">
-                                <img src="https://api.time.com/wp-content/uploads/2014/11/interstellar.jpg?quality=85&w=3600" className="d-block image-banner" alt="..." />
+                                <img src="https://wallpapers.com/images/hd/interstellar-astronaut-cooper-on-ice-blxlb2krxcwjb2du.jpg" className="d-block image-banner" alt="..." />
                                 <div class="carousel-caption">
                                     <h1>INTERSTELLAR</h1>
                                     <p>2014 Dir. by: Christopher Nolan</p>
                                 </div>
                             </div>
                             <div className="carousel-item">
-                                <img src="https://m.media-amazon.com/images/M/MV5BMTMwNzExNDk1Ml5BMl5BanBnXkFtZTcwNTYyMTE0NQ@@._V1_.jpg" className="d-block image-banner" alt="..." />
+                                <img src="https://images2.alphacoders.com/806/thumb-1920-806087.jpg" className="d-block image-banner" alt="..." />
                                 <div class="carousel-caption">
                                     <h1>LA HAINE</h1>
                                     <p>1995 Dir. by: Mathieu Kassovitz</p>
                                 </div>
                             </div>
                             <div className="carousel-item">
-                                <img src="https://snworksceo.imgix.net/rce/eb5fe1d1-74e9-4076-969e-59212727451a.sized-1000x1000.webp?w=1000" className="d-block image-banner" alt="..." />
+                                <img src="https://images.wallpapersden.com/image/download/the-batman-international-official_bWZubWmUmZqaraWkpJRmbmdlrWZlbWU.jpg" className="d-block image-banner" alt="..." />
                                 <div class="carousel-caption">
                                     <h3>THE BATMAN</h3>
                                     <p>2022 Dir. by: Matt Reeves</p>

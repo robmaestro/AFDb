@@ -19,9 +19,7 @@
     flex-direction: column;
     font-size: 30px;
     gap:10px;
-    padding:0 450px;
 }
-
 
 #caHolder{
     width: 100%;
@@ -34,7 +32,7 @@
 
 .image-banner{
     width:100%;
-    min-height:650px;
+    min-height: 800px;
 }
 
 .featured-movies, .upcoming-movies, .browse-movies{
