@@ -6,8 +6,12 @@ export default function Body() {
         <>
             <div className="main-body">
                 <div className="banner-header">
-                <Header />
-                    <span className="banner-header-title">What are you watching today?</span>
+                    <Header />
+
+                    <div className="webpage-text">
+                        What are you watching today?
+                    </div>
+
                     <div id="banner-images" className="carousel slide" data-bs-ride="true">
 
                         <div className="carousel-inner">
@@ -26,9 +30,9 @@ export default function Body() {
                                 </div>
                             </div>
                             <div className="carousel-item">
-                                <img src="https://images.wallpapersden.com/image/download/the-batman-international-official_bWZubWmUmZqaraWkpJRmbmdlrWZlbWU.jpg" className="d-block image-banner" alt="..." />
+                                <img src="https://images.wallpapersden.com/image/download/batman-2022_bWZuameUmZqaraWkpJRmbmdlrWZlbWU.jpg" className="d-block image-banner" alt="..." />
                                 <div class="carousel-caption">
-                                    <h3>THE BATMAN</h3>
+                                    <h1>THE BATMAN</h1>
                                     <p>2022 Dir. by: Matt Reeves</p>
                                 </div>
                             </div>
@@ -46,9 +50,14 @@ export default function Body() {
                     </div>
                 </div>
 
+                <div className="webpage-text">
+                    See some movies with our list
+                </div>
+
                 <div className="featured-movies">
-                    <div>
+                    <div className="collection-title d-flex justify-content-between">
                         <span>FEATURED MOVIES</span>
+                        <a href="#" id="more-link">MORE</a>
                     </div>
                     <div className="featured-movies-content">
                         <img alt="movie poster" className="featured-movies-content-images" src="https://m.media-amazon.com/images/M/MV5BNDIzNDU0YzEtYzE5Ni00ZjlkLTk5ZjgtNjM3NWE4YzA3Nzk3XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg" />
@@ -59,8 +68,9 @@ export default function Body() {
                     </div>
                 </div>
                 <div className="upcoming-movies">
-                    <div>
+                    <div className="collection-title d-flex justify-content-between">
                         <span>UPCOMING MOVIES</span>
+                        <a href="#" id="more-link">MORE</a>
                     </div>
                     <div className="upcoming-movies-content">
                         <img alt="movie poster" className="upcoming-movies-content-images" src="https://m.media-amazon.com/images/M/MV5BNDIzNDU0YzEtYzE5Ni00ZjlkLTk5ZjgtNjM3NWE4YzA3Nzk3XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg" />
@@ -72,8 +82,9 @@ export default function Body() {
                 </div>
 
                 <div className="browse-movies">
-                    <div>
+                    <div className="collection-title d-flex justify-content-between">
                         <span>BROWSE MOVIES</span>
+                        <a href="#" id="more-link">MORE</a>
                     </div>
                     <div className="browse-movies-content">
                         <img alt="movie poster" className="browse-movies-content-images" src="https://m.media-amazon.com/images/M/MV5BNDIzNDU0YzEtYzE5Ni00ZjlkLTk5ZjgtNjM3NWE4YzA3Nzk3XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg" />
@@ -91,12 +102,38 @@ export default function Body() {
                     </div>
                 </div>
 
+                <div className="movie-genres">
+                    <div className="webpage-text">
+                        <span>Browse by genres</span>
+                    </div>
+                    <div className="movie-genres-list">
+                        <div className="movie-genre-action">
+                            <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" />
+                        </div>
+                        <div className="movie-genre-comedy">
+                            <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BNDIzNDU0YzEtYzE5Ni00ZjlkLTk5ZjgtNjM3NWE4YzA3Nzk3XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg" />
+                        </div>
+                        <div className="movie-genre-horror"></div>
+                        <div className="movie-genre-thriller"></div>
+                        <div className="movie-genre-drama"></div>
+                        <div className="movie-genre-fantasy"></div>
+                        <div className="movie-genre-scifi"></div>
+                        <div className="movie-genre-romance"></div>
+                    </div>
+                </div>
+
                 <div className="account-prompt">
                     <div>
                         <span>DON'T HAVE AN ACCOUNT? SIGN UP! IT'S FREE</span>
                     </div>
-                    <div className="browse-movies-content">
+                </div>
 
+                <div className="recent-movies">
+                    <div className="recent-movies-header">
+                        <span>RECENT MOVIES</span>
+                    </div>
+                    <div className="recent-movies-content">
+                        <img alt="movie poster" className="browse-movies-content-images" src="https://m.media-amazon.com/images/M/MV5BNDIzNDU0YzEtYzE5Ni00ZjlkLTk5ZjgtNjM3NWE4YzA3Nzk3XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg" />
                     </div>
                 </div>
             </div>
