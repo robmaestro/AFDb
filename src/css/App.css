@@ -43,6 +43,16 @@ a{
     padding:0px 100px;
 }
 
+.films-banner-header{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    gap:10px;
+    padding:0px 100px;
+}
+
 .image-banner{
     width:100%;
     min-height: 800px;
@@ -80,6 +90,13 @@ a{
     height: auto;
     border: white solid 1px;
     min-height:230px;
+}
+
+.mini-browse-movies-content-images{
+    width: 80px;
+    height: auto;
+    border: white solid 1px;
+    min-height:130px;
 }
 
 .movie-genre-images{

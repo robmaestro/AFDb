@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import { useState } from 'react';
 import CreateAccountModal from './components/CreateAccountModal';
 import SignInModal from './components/SignInModal';
+import Films from './components/Films';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
     <>
       <SignInModal />
       <CreateAccountModal />
-      <Body /> 
+      <Films /> 
       <Footer />
     </>
   );
