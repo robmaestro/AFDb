@@ -1,13 +1,14 @@
 import React from "react";
 import Header from './Header'
+import Footer from "./Footer";
 
 export default function Body() {
+
     return (
         <>
             <div className="main-body">
-                <div className="banner-header">
-                    <Header />
-
+            <Header />
+                <div className="banner-header"> 
                     <div className="webpage-text">
                         What are you watching today?
                     </div>
@@ -232,6 +233,7 @@ export default function Body() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </>
     )
 

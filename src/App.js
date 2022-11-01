@@ -2,9 +2,8 @@ import './css/App.css';
 import Body from './components/Body'
 import Footer from './components/Footer'
 import { useState } from 'react';
-import CreateAccountModal from './components/CreateAccountModal';
-import SignInModal from './components/SignInModal';
 import Films from './components/Films';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 function App() {
@@ -12,10 +11,8 @@ function App() {
   
   return (
     <>
-      <SignInModal />
-      <CreateAccountModal />
-      <Films /> 
-      <Footer />
+     
+      <Body /> 
     </>
   );
 }
