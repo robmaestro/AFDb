@@ -223,14 +223,6 @@ export default function Body() {
                         </a>
                     </div>
 
-                    <div className="recent-movies">
-                        <div className="recent-movies-header">
-                            <span>RECENT MOVIES</span>
-                        </div>
-                        <div className="recent-movies-content">
-                            <img alt="movie poster" className="browse-movies-content-images" src="https://m.media-amazon.com/images/M/MV5BNDIzNDU0YzEtYzE5Ni00ZjlkLTk5ZjgtNjM3NWE4YzA3Nzk3XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg" />
-                        </div>
-                    </div>
                 </div>
             </div>
             <Footer />

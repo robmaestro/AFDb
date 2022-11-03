@@ -126,6 +126,7 @@ a{
     justify-content: center;
 }
 
+
 .footer-links{
     text-decoration: none;
     color: rgb(200, 200, 200);
@@ -133,7 +134,7 @@ a{
 
 .footer-links:hover{
     text-decoration: none;
-    color: rgb(200, 200, 200);
+    color: #c8c8c8;
 }
 
 .footer-container{
@@ -211,4 +212,18 @@ a{
 .account-prompt-container{
     padding:20px;
     width:100%;
+}
+
+.account-prompt-container a:hover{
+    color:white;
+}
+
+.PageLogo{
+    height:40px;
+    width:auto;
+    border-radius: 4%;
+}
+
+.PageLogo:hover{
+    opacity:90%;
 }
