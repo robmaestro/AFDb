@@ -1,14 +1,22 @@
 import React from "react";
 import Header from './Header'
 import Footer from "./Footer";
+import { useNavigate } from "react-router-dom";
 
 export default function Body() {
+
+    let navigate = useNavigate()
+
+    const toFilmPage = () => {
+        let path = '/filmPage';
+        navigate(path);
+    }
 
     return (
         <>
             <div className="main-body">
-            <Header />
-                <div className="banner-header"> 
+                <Header />
+                <div className="banner-header">
                     <div className="webpage-text">
                         What are you watching today?
                     </div>
@@ -16,21 +24,21 @@ export default function Body() {
                     <div id="banner-images" className="carousel slide" data-bs-ride="true">
 
                         <div className="carousel-inner">
-                            <div className="carousel-item active">
+                            <div className="carousel-item active" onClick={toFilmPage}>
                                 <img src="https://wallpapers.com/images/hd/interstellar-astronaut-cooper-on-ice-blxlb2krxcwjb2du.jpg" className="d-block image-banner" alt="..." />
                                 <div class="carousel-caption">
                                     <h1>INTERSTELLAR</h1>
                                     <p>2014 Dir. by: Christopher Nolan</p>
                                 </div>
                             </div>
-                            <div className="carousel-item">
+                            <div className="carousel-item" onClick={toFilmPage}>
                                 <img src="https://images2.alphacoders.com/806/thumb-1920-806087.jpg" className="d-block image-banner" alt="..." />
                                 <div class="carousel-caption">
                                     <h1>LA HAINE</h1>
                                     <p>1995 Dir. by: Mathieu Kassovitz</p>
                                 </div>
                             </div>
-                            <div className="carousel-item">
+                            <div className="carousel-item" onClick={toFilmPage}>
                                 <img src="https://images.wallpapersden.com/image/download/batman-2022_bWZuameUmZqaraWkpJRmbmdlrWZlbWU.jpg" className="d-block image-banner" alt="..." />
                                 <div class="carousel-caption">
                                     <h1>THE BATMAN</h1>
@@ -216,7 +224,7 @@ export default function Body() {
                             </div>
                         </div>
                     </div>
-            
+
                     <div className="account-prompt-container">
                         <a href="#" className="account-prompt">
                             <span>DON'T HAVE AN ACCOUNT? SIGN UP! IT'S FREE</span>
