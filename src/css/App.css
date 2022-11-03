@@ -243,6 +243,9 @@ a{
     opacity:1 !important;
 }
 
+.film-details-container{
+    height:100vh;
+}
 
 .content-body-container{
     display: flex;

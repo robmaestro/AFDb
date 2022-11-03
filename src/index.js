@@ -6,18 +6,16 @@ import Films from './components/Films'
 import FilmDetails from './components/FilmDetails'
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import FilmPage from './components/FilmPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />}> </Route>
-      <Route path="/films" element={<Films />}> </Route>
-      <Route path="/filmPage" element={<FilmPage />}> </Route>
-      <Route path="/films/Details" element={<FilmDetails />}> </Route>
-    </Routes>
-  </BrowserRouter>
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<App />}> </Route>
+            <Route path="/films" element={<Films />}> </Route>
+            <Route path="/films/Details" element={<FilmDetails />}> </Route>
+        </Routes>
+    </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -32,12 +32,12 @@ function FilmList() {
     return (
         <>
             <div>
-            {isLoading ? (<h1>Loading</h1>) : (
-                names.map((_names) => ( <>
-                        <img alt="movie poster" className="films-content-images" src={_names.Poster} onClick={toFilmDetails}/>
-                        </>
-                ))
-            )}
+                {isLoading ? (<h1>Loading</h1>) : (
+                    names.map((_names) => (<>
+                        <img alt="movie poster" className="films-content-images" src={_names.Poster} onClick={toFilmDetails} />
+                    </>
+                    ))
+                )}
             </div>
         </>
     );

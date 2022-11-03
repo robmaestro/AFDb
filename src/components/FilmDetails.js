@@ -7,7 +7,7 @@ function FilmDetails() {
         <>
             <div className="main-body">
                 <Header />
-                <div class="container">
+                <div class="film-details-container">
                     <div class="row">
                         <div class="col">
                             <img alt="movie poster" className="featured-movies-content-images" src="https://m.media-amazon.com/images/M/MV5BNDIzNDU0YzEtYzE5Ni00ZjlkLTk5ZjgtNjM3NWE4YzA3Nzk3XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg" />
