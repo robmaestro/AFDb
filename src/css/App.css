@@ -88,6 +88,25 @@ a{
     grid-auto-flow: column;
 }
 
+.films-content{
+    display: grid;
+    gap:10px;
+    grid-auto-flow: column;
+    margin: 0 3%;
+}
+
+.films-content-images{
+    width: 150px;
+    height: auto;
+    border: white solid 1px;
+    min-height:230px;
+    margin: 1% 1%;
+}
+
+.films-content-images:hover{
+    border: rgb(43, 58, 47) solid 1px;
+}
+
 .featured-movies-content-images, .upcoming-movies-content-images, .browse-movies-content-images{
     width: 150px;
     height: auto;
