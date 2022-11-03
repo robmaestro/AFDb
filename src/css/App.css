@@ -82,10 +82,48 @@ a{
     padding:10px 0;
 }
 
+.film-details{
+    width: 100%;
+}
+
+.film-title{
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.film-year{
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.film-director{
+    text-decoration:underline;
+    font-size: 20px;
+}
+
 .featured-movies-content, .upcoming-movies-content, .browse-movies-content{
     display: grid;
     gap:10px;
     grid-auto-flow: column;
+}
+
+.films-content{
+    display: grid;
+    gap:10px;
+    grid-auto-flow: column;
+    margin: 0 3%;
+}
+
+.films-content-images{
+    width: 150px;
+    height: auto;
+    border: white solid 1px;
+    min-height:230px;
+    margin: 1% 1%;
+}
+
+.films-content-images:hover{
+    border: rgb(43, 58, 47) solid 1px;
 }
 
 .featured-movies-content-images, .upcoming-movies-content-images, .browse-movies-content-images{
@@ -154,6 +192,11 @@ a{
 
 .movie-genre{
     position:relative;
+    max-width:800px;
+    display:flex;
+    margin:0 10px;
+}
+.film-genre{
     max-width:800px;
     display:flex;
     margin:0 10px;
