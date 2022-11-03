@@ -1,9 +1,15 @@
 import React from "react";
 import Header from './Header'
 import Footer from "./Footer";
+import { useNavigate } from "react-router-dom";
 
 export default function Body() {
 
+    let navigate = useNavigate()
+    const toFilms = () => {
+        let path = '/films';
+        navigate(path);
+    }
     return (
         <>
             <div className="main-body">
@@ -88,7 +94,7 @@ export default function Body() {
                     <div className="browse-movies">
                         <div className="collection-title d-flex justify-content-between">
                             <span>BROWSE MOVIES</span>
-                            <a href="#" id="more-link">MORE</a>
+                            <a onClick={toFilms} id="more-link">MORE</a>
                         </div>
                         <div className="browse-movies-content">
                             <img alt="movie poster" className="browse-movies-content-images" src="https://m.media-amazon.com/images/M/MV5BNDIzNDU0YzEtYzE5Ni00ZjlkLTk5ZjgtNjM3NWE4YzA3Nzk3XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg" />

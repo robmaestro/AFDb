@@ -9,7 +9,6 @@ export default function Films() {
     return (
         <>
             <div className="main-body">
-
                 <Header />
                 <div className="upcoming-movies">
                     <div className="collection-title d-flex justify-content-between">

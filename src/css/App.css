@@ -82,6 +82,25 @@ a{
     padding:10px 0;
 }
 
+.film-details{
+    width: 100%;
+}
+
+.film-title{
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.film-year{
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.film-director{
+    text-decoration:underline;
+    font-size: 20px;
+}
+
 .featured-movies-content, .upcoming-movies-content, .browse-movies-content{
     display: grid;
     gap:10px;
@@ -173,6 +192,11 @@ a{
 
 .movie-genre{
     position:relative;
+    max-width:800px;
+    display:flex;
+    margin:0 10px;
+}
+.film-genre{
     max-width:800px;
     display:flex;
     margin:0 10px;

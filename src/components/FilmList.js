@@ -1,9 +1,16 @@
 import React from "react";
+import FilmDetails from "./FilmDetails";
+import { useNavigate } from "react-router-dom";
 
 function FilmList() {
+
+    let navigate = useNavigate()
+    const toFilmDetails = () => {
+        let path = '/films/Details';
+        navigate(path);
+    }
     const [isLoading, setIsLoading] = React.useState(true);
     const [names, setNames] = React.useState([]);
-
 
     React.useEffect(() => {
         const url = "http://localhost:5000/";
@@ -21,12 +28,14 @@ function FilmList() {
             setIsLoading(true);
         }
     }, [names]);
+
     return (
         <>
-            <div className="view overlay">
+            <div>
             {isLoading ? (<h1>Loading</h1>) : (
-                names.map((_names) => (
-                        <img alt="movie poster" className="films-content-images" src={_names.Poster} />
+                names.map((_names) => ( <>
+                        <img alt="movie poster" className="films-content-images" src={_names.Poster} onClick={toFilmDetails}/>
+                        </>
                 ))
             )}
             </div>
