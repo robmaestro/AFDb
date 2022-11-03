@@ -8,7 +8,7 @@ export default function Body() {
     let navigate = useNavigate()
 
     const toFilmPage = () => {
-        let path = '/filmPage';
+        let path = '/films/Details';
         navigate(path);
     }
 

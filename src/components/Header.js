@@ -18,8 +18,8 @@ export default function Header() {
     }
     return (
         <>
-         <SignInModal />
-      <CreateAccountModal />
+            <SignInModal />
+            <CreateAccountModal />
             <nav className="navbar navbar-expand-sm">
                 <div className="container-fluid">
                     <div className="collapse navbar-collapse " id="navbarSupportedContent">
@@ -27,8 +27,8 @@ export default function Header() {
                             <img src={icon} className="PageLogo" alt="" onClick={toHome} />
                         </a>
                         <div className="mx-auto">
-                            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                                
+                            <ul className="navbar-nav me-auto mb-2 mb-lg-0 navbar-links">
+
                                 <li className="nav-item">
                                     <a className="nav-link display-6" data-bs-toggle="modal" data-bs-target="#exampleModal">SIGN IN</a>
                                 </li>
