@@ -230,8 +230,9 @@ export default function Body() {
                     </div>
 
                     <div className="account-prompt-container">
+                        <span>Don't have an account? Sign up! It's FREE!</span>
                         <a href="#" className="account-prompt">
-                            <span>DON'T HAVE AN ACCOUNT? SIGN UP! IT'S FREE</span>
+                            Register Now
                         </a>
                     </div>
 

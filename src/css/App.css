@@ -4,34 +4,34 @@
 .main-body {
     background-color: rgb(20, 20, 20);
     color: rgb(200, 200, 200);
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap:20px;
+    gap: 20px;
     font-family: 'Roboto', sans-serif;
     padding-bottom: 20px;
-    font-weight:300;
+    font-weight: 300;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-.navbar{
-    background-color: rgba(0,0,0,0);
+.navbar {
+    background-color: rgba(0, 0, 0, 0);
     font-weight: 400;
     font-size: 15px;
 }
 
-.nav-link{
-    color: rgb(216, 214, 214);
+.nav-link {
+    color: #d8d6d6;
 }
 
-.webpage-text{
-    font-size:50px;
-    padding:10px;
-    display:flex;
+.webpage-text {
+    font-size: 50px;
+    padding: 10px;
+    display: flex;
     justify-content: center;
 }
 
@@ -41,181 +41,260 @@ a{
     align-items: center;
     flex-direction: column;
     font-size: 30px;
-    gap:10px;
-    padding:0px 100px;
+    gap: 10px;
+    padding: 0px 100px;
 }
 
-.films-banner-header{
+.films-banner-header {
     width: 50%;
     display: flex;
     align-items: center;
     flex-direction: column;
     font-size: 15px;
-    gap:10px;
-    padding:0px 100px;
+    gap: 10px;
+    padding: 0px 100px;
 }
 
-.image-banner{
-    width:100%;
+.image-banner {
+    width: 100%;
     min-height: 800px;
-    object-fit:cover;
+    object-fit: cover;
 }
 
-#caHolder{
+#caHolder {
     width: 100%;
     margin: 2% 0%
 }
 
-.caBody{
+.caBody {
     padding: 2% 10%;
 }
 
-.collection-title{
+.collection-title {
     border-bottom: white solid 1px;
 }
 
-.featured-movies, .upcoming-movies, .browse-movies, .movie-genres-content{
-    display:flex;
+.featured-movies,
+.upcoming-movies,
+.browse-movies,
+.movie-genres-content {
+    display: flex;
     flex-direction: column;
     font-size: 15px;
-    gap:10px;
-    padding:10px 0;
+    gap: 10px;
+    padding: 10px 0;
 }
 
-.film-details{
+.film-details {
     width: 100%;
 }
 
-.film-title{
+.film-title {
     font-weight: bolder;
     font-size: 25px;
 }
 
-.film-year{
+.film-year {
     text-decoration: underline;
     font-size: 20px;
 }
 
-.film-director{
-    text-decoration:underline;
+.film-director {
+    text-decoration: underline;
     font-size: 20px;
 }
 
-.featured-movies-content, .upcoming-movies-content, .browse-movies-content{
+.featured-movies-content,
+.upcoming-movies-content,
+.browse-movies-content {
     display: grid;
-    gap:10px;
+    gap: 10px;
     grid-auto-flow: column;
 }
 
-.films-content{
+.films-content {
     display: grid;
-    gap:10px;
+    gap: 10px;
     grid-auto-flow: column;
     margin: 0 3%;
 }
 
-.films-content-images{
+.films-content-images {
     width: 150px;
     height: auto;
     border: white solid 1px;
-    min-height:230px;
+    min-height: 230px;
     margin: 1% 1%;
 }
 
-.films-content-images:hover{
+.films-content-images:hover {
     border: rgb(43, 58, 47) solid 1px;
 }
 
-.featured-movies-content-images, .upcoming-movies-content-images, .browse-movies-content-images{
+.featured-movies-content-images,
+.upcoming-movies-content-images,
+.browse-movies-content-images {
     width: 150px;
     height: auto;
     border: white solid 1px;
-    min-height:230px;
+    min-height: 230px;
 }
 
-.mini-browse-movies-content-images{
+.mini-browse-movies-content-images {
     width: 80px;
     height: auto;
     border: white solid 1px;
-    min-height:130px;
+    min-height: 130px;
 }
 
-.movie-genre-images{
+.movie-genre-images {
     display: block;
     width: 250px;
     height: auto;
     border: white solid 1px;
-    min-height:300px;
+    min-height: 300px;
 }
 
-#more-link{
-    font-size:12px;
+#more-link {
+    font-size: 12px;
     color: inherit;
     display: flex;
     align-items: flex-end;
 }
 
-.account-prompt{
-    background-color: rgb(60, 60, 60);
-    border: white solid 1px;
-    padding:50px;
-    font-size: 18px;
-    display:flex;
+.account-prompt-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap:25px;
+    font-size:35px;
+}
+
+.account-prompt-container a:hover {
+    color: white;
+}
+
+.account-prompt {
+    font-size: 30px;
+    width: auto;
+    height: auto;
+    float: left;
+    transition: .5s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    margin: 0 5px;
+    background: rgb(23, 23, 23);
+    text-transform: uppercase;
+}
+
+.account-prompt:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+}
+
+.account-prompt:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+}
+
+.account-prompt:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.account-prompt:hover:before{
+    border-color: #c8c8c8;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+}
+
+.account-prompt:hover::after{
+    border-color: #c8c8c8;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
 }
 
 
-.footer-links{
+.footer-links {
     text-decoration: none;
     color: rgb(200, 200, 200);
 }
 
-.footer-links:hover{
+.footer-links:hover {
     text-decoration: none;
     color: #c8c8c8;
 }
 
-.footer-container{
-    font-size:15px;
-    padding:30px;
+
+.footer-container {
+    font-size: 15px;
+    padding: 30px;
+    background-color: rgb(25, 25, 25);
 }
 
-.footer-text{
+.footer-link-list{
+    list-style: none;
+}
+
+.footer-text {
     color: rgb(190, 190, 190);
-    font-size:10px;
+    font-size: 10px;
 }
 
-.movie-genres-container{
-    width:100%;
-    padding:20px;
+.movie-genres-container {
+    width: 100%;
+    padding: 20px;
 }
 
-.movie-genre{
-    position:relative;
-    max-width:800px;
-    display:flex;
-    margin:0 10px;
-}
-.film-genre{
-    max-width:800px;
-    display:flex;
-    margin:0 10px;
+.movie-genre {
+    position: relative;
+    max-width: 800px;
+    display: flex;
+    margin: 0 10px;
 }
 
-.movie-genres-list{
-    display:flex;
+.film-genre {
+    max-width: 800px;
+    display: flex;
+    margin: 0 10px;
+}
+
+.movie-genres-list {
+    display: flex;
     flex-direction: row;
     justify-content: center !important;
     align-items: center;
 }
 
-.image-overlay{
+.image-overlay {
     position: absolute;
-    top:0;
-    left:0;
-    width:100%;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     color: white;
     display: flex;
     flex-direction: column;
@@ -223,58 +302,51 @@ a{
     justify-content: center;
     opacity: 0.6;
     transition: all 0.25s;
-    font-size:40px;
+    font-size: 40px;
 }
 
-.image-overlay > * {
+.image-overlay>* {
     transform: translateY(10px);
     transition: transform 0.25s;
 }
 
-.image-overlay:hover{
-    opacity:1;
+.image-overlay:hover {
+    opacity: 1;
 }
 
-.image-overlay:hover > *{
+.image-overlay:hover>* {
     transform: translateY(0);
 }
 
-.image-overlay-text{
-    opacity:1 !important;
+.image-overlay-text {
+    opacity: 1 !important;
 }
 
-.film-details-container{
-    height:100vh;
+.film-details-container {
+    height: 100vh;
 }
 
-.content-body-container{
+.content-body-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:0 100px;
+    margin: 0 100px;
 }
 
-.account-prompt-container{
-    padding:20px;
-    width:100%;
-}
 
-.account-prompt-container a:hover{
-    color:white;
-}
 
-.PageLogo{
-    height:40px;
-    width:auto;
+.PageLogo {
+    height: 40px;
+    width: auto;
     border-radius: 4%;
 }
 
-.PageLogo:hover{
-    opacity:90%;
+.PageLogo:hover {
+    opacity: 90%;
 }
 
-.navbar-links a{
+.navbar-links a {
     font-size: 15px;
     color: #e1e1e1;
     font-family: inherit;
@@ -288,16 +360,18 @@ a{
     transition-property: color;
 }
 
-.navbar-links a:hover, .navbar-links a:focus{
+.navbar-links a:hover,
+.navbar-links a:focus {
     color: #fff;
 }
 
-.navbar-links a:hover:after, .navbar-links a:focus:after{
+.navbar-links a:hover:after,
+.navbar-links a:focus:after {
     width: 100%;
     left: 0%;
 }
 
-.navbar-links a:after{
+.navbar-links a:after {
     content: "";
     pointer-events: none;
     bottom: -2px;

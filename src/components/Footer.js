@@ -3,11 +3,11 @@ import React from "react";
 export default function Footer() {
     return (
         <>
-            <nav className="navbar navbar-dark bg-dark footer-container">
+            <nav className="navbar navbar-dark footer-container">
                 <div className="container-fluid d-flex justify-content-around align-items-start">
                     <div className="d-flex flex-column gap-2">
                         <div>
-                            <ul className="d-flex flex-direction-row m-0 p-0 gap-3">
+                            <ul className="d-flex flex-direction-row m-0 p-0 gap-3 footer-link-list">
                                 <li>
                                     <a className="footer-links" href="#">About</a>
                                 </li>
