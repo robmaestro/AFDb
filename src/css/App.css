@@ -35,6 +35,10 @@ a {
     justify-content: center;
 }
 
+.carousel-item{
+    cursor: pointer;
+}
+
 
 .banner-header {
     display: flex;
@@ -141,6 +145,7 @@ a {
     height: auto;
     border: white solid 1px;
     min-height: 230px;
+    cursor: pointer;
 }
 
 .mini-browse-movies-content-images {
@@ -401,7 +406,7 @@ a {
     gap:50px;
 }
 
-.list-collection{
+.list-collection, .browse-movies-content{
     display: grid;
     grid-auto-flow: column;
     gap:10px;
@@ -438,3 +443,24 @@ a {
 .list-collection-images:nth-child(8n+8){
     grid-column: 8;
 }
+
+.browse-movies-content-images:nth-child(5n+1){
+    grid-column: 1;
+}
+
+.browse-movies-content-images:nth-child(5n+2){
+    grid-column: 2;
+}
+
+.browse-movies-content-images:nth-child(5n+3){
+    grid-column: 3;
+}
+
+.browse-movies-content-images:nth-child(5n+4){
+    grid-column: 4;
+}
+
+.browse-movies-content-images:nth-child(5n+5){
+    grid-column: 5;
+}
+
