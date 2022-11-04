@@ -231,7 +231,7 @@ export default function Body() {
 
                     <div className="account-prompt-container">
                         <span>Don't have an account? Sign up! It's FREE!</span>
-                        <a href="#" className="account-prompt">
+                        <a href="#" className="account-prompt" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                             Register Now
                         </a>
                     </div>

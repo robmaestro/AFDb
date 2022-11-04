@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Films from './components/Films'
 import FilmDetails from './components/FilmDetails'
+import Lists from './components/Lists'
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -13,6 +14,7 @@ root.render(
         <Routes>
             <Route path="/" element={<App />}> </Route>
             <Route path="/films" element={<Films />}> </Route>
+            <Route path="/lists" element={<Lists />}> </Route>
             <Route path="/films/Details" element={<FilmDetails />}> </Route>
         </Routes>
     </BrowserRouter>

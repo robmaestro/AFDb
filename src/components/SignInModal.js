@@ -39,7 +39,7 @@ function SignInModal({ }) {
 
                             </div>
 
-                            <button type="button" class="btn btn-primary" id="caHolder">SIGN IN</button>
+                            <button type="button" class="btn btn-dark" id="caHolder">SIGN IN</button>
                         </div>
                     </div>
                 </div>
