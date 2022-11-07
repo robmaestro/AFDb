@@ -121,7 +121,7 @@ export default function Body() {
                             <span>Browse by genres</span>
                         </div>
 
-                        <div className="movie-genres-list d-flex flex-column gap-3">
+                        <div className="movie-genres-list">
 
                             <div className="d-flex flex-row">
                                 <div className="movie-genre">

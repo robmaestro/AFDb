@@ -11,6 +11,7 @@
     font-family: 'Roboto', sans-serif;
     padding-bottom: 20px;
     font-weight: 300;
+    overflow: hidden;
 }
 
 a {
@@ -35,7 +36,7 @@ a {
     justify-content: center;
 }
 
-.carousel-item{
+.carousel-item {
     cursor: pointer;
 }
 
@@ -90,8 +91,6 @@ a {
     padding: 10px 0;
 }
 
-
-
 .film-details {
     width: 100%;
 }
@@ -126,7 +125,8 @@ a {
     margin: 0 3%;
 }
 
-.films-content-images, .list-collection-images {
+.films-content-images,
+.list-collection-images {
     width: 150px;
     height: auto;
     border: white solid 1px;
@@ -141,7 +141,7 @@ a {
 .featured-movies-content-images,
 .upcoming-movies-content-images,
 .browse-movies-content-images {
-    width: 150px;
+    max-width: 150px;
     height: auto;
     border: white solid 1px;
     min-height: 230px;
@@ -153,14 +153,6 @@ a {
     height: auto;
     border: white solid 1px;
     min-height: 130px;
-}
-
-.movie-genre-images {
-    display: block;
-    width: 250px;
-    height: auto;
-    border: white solid 1px;
-    min-height: 300px;
 }
 
 #more-link {
@@ -176,8 +168,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:25px;
-    font-size:35px;
+    gap: 25px;
+    font-size: 35px;
 }
 
 .account-prompt-container a:hover {
@@ -226,18 +218,18 @@ a {
     transform: translateX(-100%);
 }
 
-.account-prompt:hover{
+.account-prompt:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-.account-prompt:hover:before{
+.account-prompt:hover:before {
     border-color: #c8c8c8;
     height: 100%;
     transform: translateX(0);
     transition: .3s transform linear, .3s height linear .3s;
 }
 
-.account-prompt:hover::after{
+.account-prompt:hover::after {
     border-color: #c8c8c8;
     height: 100%;
     transform: translateX(0);
@@ -262,7 +254,7 @@ a {
     background-color: rgb(25, 25, 25);
 }
 
-.footer-link-list{
+.footer-link-list {
     list-style: none;
 }
 
@@ -283,6 +275,14 @@ a {
     margin: 0 10px;
 }
 
+.movie-genre-images {
+    display: block;
+    width: 250px;
+    height: auto;
+    border: white solid 1px;
+    min-height: 300px;
+}
+
 .film-genre {
     max-width: 800px;
     display: flex;
@@ -291,9 +291,10 @@ a {
 
 .movie-genres-list {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center !important;
     align-items: center;
+    gap: 20px;
 }
 
 .image-overlay {
@@ -393,74 +394,165 @@ a {
     transition-property: width, left;
 }
 
-.modal-content{
-    color:black;
+.modal-content {
+    color: black;
     font-family: 'Roboto', sans-serif;
 }
 
-.modal-body{
-    padding:20px;
+.modal-body {
+    padding: 20px;
 }
 
-#navbarSupportedContent{
-    gap:50px;
+#navbarSupportedContent {
+    gap: 50px;
 }
 
-.list-collection, .browse-movies-content{
+.list-collection,
+.browse-movies-content {
     display: grid;
     grid-auto-flow: column;
-    gap:10px;
+    gap: 10px;
 }
 
-.list-collection-images:nth-child(8n+1){
+.list-collection-images:nth-child(8n+1) {
     grid-column: 1;
 }
 
-.list-collection-images:nth-child(8n+2){
+.list-collection-images:nth-child(8n+2) {
     grid-column: 2;
 }
 
-.list-collection-images:nth-child(8n+3){
+.list-collection-images:nth-child(8n+3) {
     grid-column: 3;
 }
 
-.list-collection-images:nth-child(8n+4){
+.list-collection-images:nth-child(8n+4) {
     grid-column: 4;
 }
 
-.list-collection-images:nth-child(8n+5){
+.list-collection-images:nth-child(8n+5) {
     grid-column: 5;
 }
 
-.list-collection-images:nth-child(8n+6){
+.list-collection-images:nth-child(8n+6) {
     grid-column: 6;
 }
 
-.list-collection-images:nth-child(8n+7){
+.list-collection-images:nth-child(8n+7) {
     grid-column: 7;
 }
 
-.list-collection-images:nth-child(8n+8){
+.list-collection-images:nth-child(8n+8) {
     grid-column: 8;
 }
 
-.browse-movies-content-images:nth-child(5n+1){
+.browse-movies-content-images:nth-child(5n+1) {
     grid-column: 1;
 }
 
-.browse-movies-content-images:nth-child(5n+2){
+.browse-movies-content-images:nth-child(5n+2) {
     grid-column: 2;
 }
 
-.browse-movies-content-images:nth-child(5n+3){
+.browse-movies-content-images:nth-child(5n+3) {
     grid-column: 3;
 }
 
-.browse-movies-content-images:nth-child(5n+4){
+.browse-movies-content-images:nth-child(5n+4) {
     grid-column: 4;
 }
 
-.browse-movies-content-images:nth-child(5n+5){
+.browse-movies-content-images:nth-child(5n+5) {
     grid-column: 5;
 }
 
+
+@media (width >=320px) and (width <=480px) {
+    .banner-header {
+        padding: 0px;
+        gap: 0;
+    }
+
+    .webpage-text {
+        font-size: 25px;
+        padding: 25px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #banner-images {
+        max-height: 500px;
+    }
+
+    .carousel-inner {
+        max-height: inherit;
+    }
+
+    .image-banner {
+        min-height: 0;
+        max-height: inherit;
+    }
+
+    .carousel-item {
+        height: inherit;
+    }
+
+    .carousel-caption {
+        font-size: 15px;
+        text-shadow: 5px 5px 7px #292929;
+    }
+
+    .content-body-container {
+        margin: 0;
+    }
+
+    .featured-movies,
+    .upcoming-movies,
+    .browse-movies,
+    .movie-genres-content,
+    .list-collection-container {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        gap: 10px;
+        padding: 10px 0;
+        overflow-x: auto;
+    }
+
+    .featured-movies-content,
+    .upcoming-movies-content,
+    .browse-movies-content {
+        display: flex;
+        overflow-x: auto;
+        grid-auto-flow: row;
+    }
+
+    .featured-movies-content-images,
+    .upcoming-movies-content-images,
+    .browse-movies-content-images {
+        max-width: 100px;
+        height: auto;
+        border: white solid 1px;
+        min-height: 150px;
+        cursor: pointer;
+    }
+
+    .movie-genre {
+        position: relative;
+        max-width: 800px;
+        display: flex;
+        margin: 0 10px;
+    }
+
+    .movie-genre-images {
+        display: block;
+        width: 150px;
+        height: auto;
+        border: white solid 1px;
+        min-height: 200px;
+    }
+
+    .account-prompt-container{
+        font-size:22px;
+    }
+}
