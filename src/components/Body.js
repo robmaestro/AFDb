@@ -19,7 +19,7 @@ export default function Body() {
     return (
         <>
             <div className="main-body">
-                <Header />
+                <Header/>
                 <div className="banner-header">
                     <div className="webpage-text">
                         What are you watching today?
