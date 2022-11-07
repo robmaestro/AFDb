@@ -53,7 +53,7 @@ function Modal({ }) {
 
                             </div>
 
-                            <button type="button" className="btn btn-primary" id="caHolder">SIGN UP</button>
+                            <button type="button" class="btn btn-dark" id="caHolder">SIGN UP</button>
                         </div>
                     </div>
                 </div>
