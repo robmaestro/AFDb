@@ -25,6 +25,10 @@ a {
     font-size: 15px;
 }
 
+.tab-space{
+    margin: 1rem 0;
+}
+
 .nav-link {
     color: #d8d6d6;
 }
@@ -105,6 +109,15 @@ a {
     font-size: 20px;
 }
 
+.modal{
+    color: black;
+}
+
+.film-details-row{
+    margin: 0;
+    padding: 0 15%;
+}
+
 .film-director {
     text-decoration: underline;
     font-size: 20px;
@@ -136,6 +149,22 @@ a {
 
 .films-content-images:hover {
     border: rgb(43, 58, 47) solid 1px;
+}
+
+.film-detail-image-holder{
+    text-align: center;
+}
+
+.Add-to-watchlist-btn{
+    width: 80%;
+    margin: 1rem 0;
+}
+
+.film-movies-content-images{
+width: 80%;
+height: auto;
+border: white solid 1px;
+min-height: 230px;
 }
 
 .featured-movies-content-images,
