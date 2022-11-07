@@ -533,6 +533,7 @@ min-height: 230px;
 
     .content-body-container {
         margin: 0;
+        max-width:95%;
     }
 
     .featured-movies,
@@ -545,15 +546,16 @@ min-height: 230px;
         font-size: 15px;
         gap: 10px;
         padding: 10px 0;
-        overflow-x: auto;
+        width:90%;
     }
 
     .featured-movies-content,
     .upcoming-movies-content,
     .browse-movies-content {
         display: flex;
-        overflow-x: auto;
         grid-auto-flow: row;
+        width:100%;
+        overflow-x: auto;
     }
 
     .featured-movies-content-images,
