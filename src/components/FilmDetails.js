@@ -26,11 +26,11 @@ function FilmDetails() {
                                 </div>
                             </nav>
                             <div className="tab-content" id="nav-tabContent">
-                                <div className="tab-pane fade show active" id="nav-cast" role="tabpanel" aria-labelledby="nav-cast-tab">{state.cast}</div>
-                                <div className="tab-pane fade" id="nav-crew" role="tabpanel" aria-labelledby="nav-crew-tab">DIRECTOR........ {state.director} <br />
-                                WRITER........ {state.writer}</div>
-                                <div className="tab-pane fade" id="nav-details" role="tabpanel" aria-labelledby="nav-details-tab">LANGUAGE........ {state.language}</div>
-                                <div className="tab-pane fade" id="nav-genre" role="tabpanel" aria-labelledby="nav-genre-tab">GENRES....... {state.genre}</div>
+                                <div className="tab-pane fade show active tab-space" id="nav-cast" role="tabpanel" aria-labelledby="nav-cast-tab"><span>{state.cast}</span></div>
+                                <div className="tab-pane fade tab-space" id="nav-crew" role="tabpanel" aria-labelledby="nav-crew-tab"><span>DIRECTOR......... {state.director}</span><br/>
+                                <span>WRITER.............. {state.writer}</span></div>
+                                <div className="tab-pane fade tab-space" id="nav-details" role="tabpanel" aria-labelledby="nav-details-tab">LANGUAGE........ {state.language}</div>
+                                <div className="tab-pane fade tab-space" id="nav-genre" role="tabpanel" aria-labelledby="nav-genre-tab">GENRES....... {state.genre}</div>
                             </div>
                         </div>
                     </div>

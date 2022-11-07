@@ -7,9 +7,9 @@ export default function Body() {
 
     let navigate = useNavigate()
 
-    const toFilmPage = () => {
+    const toFilmPage = (Poster,Title,Year,Director,Plot,Cast,Language,Genre,Writer) => {
         let path = '/films/Details';
-        navigate(path);
+        navigate(path,{state:{moviename: Poster, title:Title, year:Year, director: Director, plot: Plot, cast:Cast, language:Language, genre:Genre, writer:Writer}});
     }
 
     const toFilms = () => {
@@ -28,21 +28,21 @@ export default function Body() {
                     <div id="banner-images" className="carousel slide" data-bs-ride="true">
 
                         <div className="carousel-inner">
-                            <div className="carousel-item active" onClick={toFilmPage}>
+                            <div className="carousel-item active" onClick= { () => toFilmPage("https://th.bing.com/th/id/OIP.1-dkomIBHewY0ZmkDmNP-gHaOG?pid=ImgDet&rs=1","Interstellar","2014","Christopher Nolan","The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage","Matthew McConaughey, Anne Hathaway, Jessica Chastain, Mackenzie Foy, Michael Caine, Bill Irwin,Casey Affleck, John Lithgow, Wes Bentley, David Gyasi, Matt Damon, Topher Grace, Timothée Chalamet, Ellen Burstyn, David Oyelowo, William Devane, Josh Stewart, Collette Wolfe, Leah Cairns, Russ Fega, Lena Georgas, Jeff Hephner, Elyes Gabel, Brooke Smith, Liam Dickinson, Francis X. McCarthy, Andrew Borba,Flora Nolan, William Patrick Brown, Kristian Van der Heyden, Joseph Oliveira, Ryan Irving, Alexander Michael Helisek, Benjamin Hardy, Griffen Fraser","English", "Science-Fiction, Drama ,Adventure","Christopher Nolan, Jonathan Nolan")}>
                                 <img src="https://wallpapers.com/images/hd/interstellar-astronaut-cooper-on-ice-blxlb2krxcwjb2du.jpg" className="d-block image-banner" alt="..." />
                                 <div class="carousel-caption">
                                     <h1>INTERSTELLAR</h1>
                                     <p>2014 Dir. by: Christopher Nolan</p>
                                 </div>
                             </div>
-                            <div className="carousel-item" onClick={toFilmPage}>
+                            <div className="carousel-item" onClick= { () => toFilmPage("https://th.bing.com/th/id/OIP.1-dkomIBHewY0ZmkDmNP-gHaOG?pid=ImgDet&rs=1","The Batman","2022","Matt Reeves","In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.","Robert Pattinson, Zoë Kravitz, Paul Dano, Jeffrey Wright, John Turturro, Peter Sarsgaard, Andy Serkis, Colin Farrell, Jayme Lawson, Gil Perez-Abraham, Peter McDonald","English", "Mystery, Thriller, Crime","Matt Reeves, Peter Craig")}>
                                 <img src="https://images2.alphacoders.com/806/thumb-1920-806087.jpg" className="d-block image-banner" alt="..." />
                                 <div class="carousel-caption">
                                     <h1>LA HAINE</h1>
                                     <p>1995 Dir. by: Mathieu Kassovitz</p>
                                 </div>
                             </div>
-                            <div className="carousel-item" onClick={toFilmPage}>
+                            <div className="carousel-item" onClick= { () => toFilmPage("https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_.jpg","The Batman","2022","Matt Reeves","In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.","Robert Pattinson, Zoë Kravitz, Paul Dano, Jeffrey Wright, John Turturro, Peter Sarsgaard, Andy Serkis, Colin Farrell, Jayme Lawson, Gil Perez-Abraham, Peter McDonald","English", "Mystery, Thriller, Crime","Matt Reeves, Peter Craig")}>
                                 <img src="https://images.wallpapersden.com/image/download/batman-2022_bWZuameUmZqaraWkpJRmbmdlrWZlbWU.jpg" className="d-block image-banner" alt="..." />
                                 <div class="carousel-caption">
                                     <h1>THE BATMAN</h1>
