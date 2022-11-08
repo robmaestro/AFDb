@@ -18,6 +18,10 @@ a {
     text-decoration: none;
     color: inherit;
 }
+.login-status{
+    color: red;
+    margin: 1rem;
+}
 
 .navbar {
     background-color: rgba(0, 0, 0, 0);

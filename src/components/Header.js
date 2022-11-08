@@ -3,9 +3,11 @@ import icon from "./icon2.png";
 import { useNavigate } from "react-router-dom";
 import CreateAccountModal from './CreateAccountModal';
 import SignInModal from './SignInModal';
+import { useState } from "react";
 
 export default function Header() {
-
+    const [createAccount,setCreateAccount] = useState("Create Account")
+    const [signUp,setSignUp] = useState("Sign In")
     let navigate = useNavigate()
 
     const toHome = () => {
@@ -24,7 +26,7 @@ export default function Header() {
 
     return (
         <>
-            <SignInModal />
+            <SignInModal setCreateAccount={setCreateAccount} setSignUp={setSignUp} />
             <CreateAccountModal />
             <nav className="navbar navbar-expand-sm">
                 <div className="container-fluid">
@@ -36,10 +38,10 @@ export default function Header() {
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0 navbar-links">
 
                                 <li className="nav-item">
-                                    <a className="nav-link display-6" data-bs-toggle="modal" data-bs-target="#exampleModal">SIGN IN</a>
+                                    <a className="nav-link display-6" data-bs-toggle="modal" data-bs-target="#exampleModal">{signUp}</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link display-6" data-bs-toggle="modal" data-bs-target="#staticBackdrop">CREATE ACCOUNT</a>
+                                    <a className="nav-link display-6" data-bs-toggle="modal" data-bs-target="#staticBackdrop">{createAccount}</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link display-6" onClick={toFilms}>FILMS</a>

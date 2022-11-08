@@ -1,4 +1,39 @@
-function SignInModal({ }) {
+import { useState } from "react";
+import Axios from "axios";
+
+
+function SignInModal({ setCreateAccount, setSignUp}) {
+
+    const [loginEmail,setLoginEmail] = useState("");
+    const [loginPassword,setLoginPassword] = useState("");
+    const [loginStatus,setLoginStatus] = useState("");
+
+    const Login = () => {
+        if (loginEmail === "" || loginPassword === ""){
+            setLoginStatus("Invalid Missing Fields.")
+        }
+        else{
+
+        Axios.post('http://localhost:5000/login', {
+            email:loginEmail, 
+            password: loginPassword
+        }).then((response) => {
+            if(response.data.message) {
+                setLoginStatus(response.data.message)
+                setLoginEmail("")
+                setLoginPassword("")
+            }
+            else
+            {
+                setCreateAccount(response.data[0].Username);
+                setSignUp("");
+                setLoginStatus("Logged In.")
+                setLoginEmail("")
+                setLoginPassword("")
+            }
+        })
+    }
+    }
     return (
         <>
             <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -12,34 +47,23 @@ function SignInModal({ }) {
                             <div className="col-md-10" id="caHolder">
                                 <label for="validationCustom03" className="form-label caLabel">Email</label>
                                 <center>
-                                    <input type="text" className="form-control  caInput" id="validationCustom01" required />
+                                    <input type="text" value={loginEmail} className="form-control  caInput"  onChange={(e) => {
+                                        setLoginEmail(e.target.value);
+                                    }}/>
                                 </center>
-                                <div className="invalid-feedback">
-                                    Please provide a valid E-mail.
-                                </div>
                             </div>
                             <div className="col-md-10" id="caHolder">
 
                                 <label for="validationCustom03" className="form-label caLabel">Password</label>
                                 <center>
-                                    <input type="password" className="form-control  caInput" id="validationCustom02" required />
+                                    <input type="password" value={loginPassword}  className="form-control  caInput"  onChange={(e) => {
+                                        setLoginPassword(e.target.value);
+                                    }} />
+                                    <h6 className="login-status">{loginStatus}</h6>
                                 </center>
-                                <div className="invalid-feedback">
-                                    Please provide a valid password.
-                                </div>
                             </div>
 
-                            <div className="col-10" id="caHolder">
-                                <div className="form-check">
-                                    <input className="form-check-input " type="checkbox" value="" id="invalidCheck" required />
-                                    <label className="form-check-label " for="invalidCheck">
-                                        Remember Me
-                                    </label>
-                                </div>
-
-                            </div>
-
-                            <button type="button" className="btn btn-dark" id="caHolder">SIGN IN</button>
+                            <button type="button" className="btn btn-dark" id="caHolder" onClick={Login}>SIGN IN</button>
                         </div>
                     </div>
                 </div>
