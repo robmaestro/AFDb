@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <>
             <nav className="navbar navbar-dark footer-container">
-                <div className="container-fluid d-flex justify-content-around align-items-start">
+                <div className="container-fluid d-flex justify-content-around align-items-start gap-4">
                     <div className="d-flex flex-column gap-2">
                         <div>
                             <ul className="d-flex flex-direction-row m-0 p-0 gap-3 footer-link-list">

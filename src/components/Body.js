@@ -7,9 +7,9 @@ export default function Body() {
 
     let navigate = useNavigate()
 
-    const toFilmPage = (Poster,Title,Year,Director,Plot,Cast,Language,Genre,Writer) => {
+    const toFilmPage = (Poster, Title, Year, Director, Plot, Cast, Language, Genre, Writer) => {
         let path = '/films/Details';
-        navigate(path,{state:{moviename: Poster, title:Title, year:Year, director: Director, plot: Plot, cast:Cast, language:Language, genre:Genre, writer:Writer}});
+        navigate(path, { state: { moviename: Poster, title: Title, year: Year, director: Director, plot: Plot, cast: Cast, language: Language, genre: Genre, writer: Writer } });
     }
 
     const toFilms = () => {
@@ -19,7 +19,7 @@ export default function Body() {
     return (
         <>
             <div className="main-body">
-                <Header/>
+                <Header />
                 <div className="banner-header">
                     <div className="webpage-text">
                         What are you watching today?
@@ -28,21 +28,21 @@ export default function Body() {
                     <div id="banner-images" className="carousel slide" data-bs-ride="true">
 
                         <div className="carousel-inner">
-                            <div className="carousel-item active" onClick= { () => toFilmPage("https://th.bing.com/th/id/OIP.1-dkomIBHewY0ZmkDmNP-gHaOG?pid=ImgDet&rs=1","Interstellar","2014","Christopher Nolan","The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage","Matthew McConaughey, Anne Hathaway, Jessica Chastain, Mackenzie Foy, Michael Caine, Bill Irwin,Casey Affleck, John Lithgow, Wes Bentley, David Gyasi, Matt Damon, Topher Grace, Timothée Chalamet, Ellen Burstyn, David Oyelowo, William Devane, Josh Stewart, Collette Wolfe, Leah Cairns, Russ Fega, Lena Georgas, Jeff Hephner, Elyes Gabel, Brooke Smith, Liam Dickinson, Francis X. McCarthy, Andrew Borba,Flora Nolan, William Patrick Brown, Kristian Van der Heyden, Joseph Oliveira, Ryan Irving, Alexander Michael Helisek, Benjamin Hardy, Griffen Fraser","English", "Science-Fiction, Drama ,Adventure","Christopher Nolan, Jonathan Nolan")}>
+                            <div className="carousel-item active" onClick={() => toFilmPage("https://th.bing.com/th/id/OIP.1-dkomIBHewY0ZmkDmNP-gHaOG?pid=ImgDet&rs=1", "Interstellar", "2014", "Christopher Nolan", "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage", "Matthew McConaughey, Anne Hathaway, Jessica Chastain, Mackenzie Foy, Michael Caine, Bill Irwin,Casey Affleck, John Lithgow, Wes Bentley, David Gyasi, Matt Damon, Topher Grace, Timothée Chalamet, Ellen Burstyn, David Oyelowo, William Devane, Josh Stewart, Collette Wolfe, Leah Cairns, Russ Fega, Lena Georgas, Jeff Hephner, Elyes Gabel, Brooke Smith, Liam Dickinson, Francis X. McCarthy, Andrew Borba,Flora Nolan, William Patrick Brown, Kristian Van der Heyden, Joseph Oliveira, Ryan Irving, Alexander Michael Helisek, Benjamin Hardy, Griffen Fraser", "English", "Science-Fiction, Drama ,Adventure", "Christopher Nolan, Jonathan Nolan")}>
                                 <img src="https://wallpapers.com/images/hd/interstellar-astronaut-cooper-on-ice-blxlb2krxcwjb2du.jpg" className="d-block image-banner" alt="..." />
                                 <div class="carousel-caption">
                                     <h1>INTERSTELLAR</h1>
                                     <p>2014 Dir. by: Christopher Nolan</p>
                                 </div>
                             </div>
-                            <div className="carousel-item" onClick= { () => toFilmPage("https://th.bing.com/th/id/OIP.1-dkomIBHewY0ZmkDmNP-gHaOG?pid=ImgDet&rs=1","The Batman","2022","Matt Reeves","In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.","Robert Pattinson, Zoë Kravitz, Paul Dano, Jeffrey Wright, John Turturro, Peter Sarsgaard, Andy Serkis, Colin Farrell, Jayme Lawson, Gil Perez-Abraham, Peter McDonald","English", "Mystery, Thriller, Crime","Matt Reeves, Peter Craig")}>
+                            <div className="carousel-item" onClick={() => toFilmPage("https://th.bing.com/th/id/OIP.1-dkomIBHewY0ZmkDmNP-gHaOG?pid=ImgDet&rs=1", "The Batman", "2022", "Matt Reeves", "In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.", "Robert Pattinson, Zoë Kravitz, Paul Dano, Jeffrey Wright, John Turturro, Peter Sarsgaard, Andy Serkis, Colin Farrell, Jayme Lawson, Gil Perez-Abraham, Peter McDonald", "English", "Mystery, Thriller, Crime", "Matt Reeves, Peter Craig")}>
                                 <img src="https://images2.alphacoders.com/806/thumb-1920-806087.jpg" className="d-block image-banner" alt="..." />
                                 <div class="carousel-caption">
                                     <h1>LA HAINE</h1>
                                     <p>1995 Dir. by: Mathieu Kassovitz</p>
                                 </div>
                             </div>
-                            <div className="carousel-item" onClick= { () => toFilmPage("https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_.jpg","The Batman","2022","Matt Reeves","In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.","Robert Pattinson, Zoë Kravitz, Paul Dano, Jeffrey Wright, John Turturro, Peter Sarsgaard, Andy Serkis, Colin Farrell, Jayme Lawson, Gil Perez-Abraham, Peter McDonald","English", "Mystery, Thriller, Crime","Matt Reeves, Peter Craig")}>
+                            <div className="carousel-item" onClick={() => toFilmPage("https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_.jpg", "The Batman", "2022", "Matt Reeves", "In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.", "Robert Pattinson, Zoë Kravitz, Paul Dano, Jeffrey Wright, John Turturro, Peter Sarsgaard, Andy Serkis, Colin Farrell, Jayme Lawson, Gil Perez-Abraham, Peter McDonald", "English", "Mystery, Thriller, Crime", "Matt Reeves, Peter Craig")}>
                                 <img src="https://images.wallpapersden.com/image/download/batman-2022_bWZuameUmZqaraWkpJRmbmdlrWZlbWU.jpg" className="d-block image-banner" alt="..." />
                                 <div class="carousel-caption">
                                     <h1>THE BATMAN</h1>
@@ -122,107 +122,95 @@ export default function Body() {
                         </div>
 
                         <div className="movie-genres-list">
-
-                            <div className="d-flex flex-row">
-                                <div className="movie-genre">
-                                    <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" />
-                                    <a href="#">
-                                        <div className="image-overlay">
-                                            <div className="image-overlay-text">
-                                                Action
-                                            </div>
+                            <div className="movie-genre">
+                                <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" />
+                                <a href="#">
+                                    <div className="image-overlay">
+                                        <div className="image-overlay-text">
+                                            Action
                                         </div>
-                                    </a>
-                                </div>
-
-                                <div className="movie-genre">
-                                    <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_FMjpg_UX1000_.jpg" />
-                                    <a href="#">
-                                        <div className="image-overlay">
-                                            <div className="image-overlay-text">
-                                                Comedy
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div className="movie-genre">
-                                    <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BMjUxMDQwNjcyNl5BMl5BanBnXkFtZTgwNzcwMzc0MTI@._V1_FMjpg_UX1000_.jpg" />
-                                    <a href="#">
-                                        <div className="image-overlay">
-                                            <div className="image-overlay-text">
-                                                Horror
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
                             </div>
-
-                            <div className="d-flex flex-row">
-                                <div className="movie-genre">
-                                    <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BMjEwMzMxODIzOV5BMl5BanBnXkFtZTgwNzg3OTAzMDI@._V1_FMjpg_UX1000_.jpg" />
-                                    <a href="#">
-                                        <div className="image-overlay">
-                                            <div className="image-overlay-text">
-                                                Sci-Fi
-                                            </div>
+                            <div className="movie-genre">
+                                <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_FMjpg_UX1000_.jpg" />
+                                <a href="#">
+                                    <div className="image-overlay">
+                                        <div className="image-overlay-text">
+                                            Comedy
                                         </div>
-                                    </a>
-                                </div>
-                                <div className="movie-genre">
-                                    <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BYzJjMTYyMjQtZDI0My00ZjE2LTkyNGYtOTllNGQxNDMyZjE0XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg" />
-                                    <a href="#">
-                                        <div className="image-overlay">
-                                            <div className="image-overlay-text">
-                                                Fantasy
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div className="movie-genre">
-                                    <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BZjYzNTMzZTAtNzMzOS00ZWRhLTg3MWMtM2NjYmJmZjU4NmFhL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMzI3NjY2ODc@._V1_.jpg" />
-                                    <a href="#">
-                                        <div className="image-overlay">
-                                            <div className="image-overlay-text">
-                                                Romance
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
                             </div>
-
-                            <div className="d-flex flex-row">
-                                <div className="movie-genre">
-                                    <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BZWFlYmY2MGEtZjVkYS00YzU4LTg0YjQtYzY1ZGE3NTA5NGQxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg" />
-                                    <a href="#">
-                                        <div className="image-overlay">
-                                            <div className="image-overlay-text">
-                                                Thriller
-                                            </div>
+                            <div className="movie-genre">
+                                <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BMjUxMDQwNjcyNl5BMl5BanBnXkFtZTgwNzcwMzc0MTI@._V1_FMjpg_UX1000_.jpg" />
+                                <a href="#">
+                                    <div className="image-overlay">
+                                        <div className="image-overlay-text">
+                                            Horror
                                         </div>
-                                    </a>
-                                </div>
-
-                                <div className="movie-genre">
-                                    <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BZGVmY2RjNDgtMTc3Yy00YmY0LTgwODItYzBjNWJhNTRlYjdkXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_FMjpg_UX1000_.jpg" />
-                                    <a href="#">
-                                        <div className="image-overlay">
-                                            <div className="image-overlay-text">
-                                                Drama
-                                            </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div className="movie-genre">
+                                <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BMjEwMzMxODIzOV5BMl5BanBnXkFtZTgwNzg3OTAzMDI@._V1_FMjpg_UX1000_.jpg" />
+                                <a href="#">
+                                    <div className="image-overlay">
+                                        <div className="image-overlay-text">
+                                            Sci-Fi
                                         </div>
-                                    </a>
-                                </div>
-                                <div className="movie-genre">
-                                    <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" />
-                                    <a href="#">
-                                        <div className="image-overlay">
-                                            <div className="image-overlay-text">
-                                                Adventure
-                                            </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div className="movie-genre">
+                                <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BYzJjMTYyMjQtZDI0My00ZjE2LTkyNGYtOTllNGQxNDMyZjE0XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg" />
+                                <a href="#">
+                                    <div className="image-overlay">
+                                        <div className="image-overlay-text">
+                                            Fantasy
                                         </div>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div className="movie-genre">
+                                <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BZjYzNTMzZTAtNzMzOS00ZWRhLTg3MWMtM2NjYmJmZjU4NmFhL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMzI3NjY2ODc@._V1_.jpg" />
+                                <a href="#">
+                                    <div className="image-overlay">
+                                        <div className="image-overlay-text">
+                                            Romance
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div className="movie-genre">
+                                <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BZWFlYmY2MGEtZjVkYS00YzU4LTg0YjQtYzY1ZGE3NTA5NGQxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg" />
+                                <a href="#">
+                                    <div className="image-overlay">
+                                        <div className="image-overlay-text">
+                                            Thriller
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div className="movie-genre">
+                                <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BZGVmY2RjNDgtMTc3Yy00YmY0LTgwODItYzBjNWJhNTRlYjdkXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_FMjpg_UX1000_.jpg" />
+                                <a href="#">
+                                    <div className="image-overlay">
+                                        <div className="image-overlay-text">
+                                            Drama
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div className="movie-genre">
+                                <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" />
+                                <a href="#">
+                                    <div className="image-overlay">
+                                        <div className="image-overlay-text">
+                                            Adventure
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
