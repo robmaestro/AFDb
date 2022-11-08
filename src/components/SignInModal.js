@@ -7,6 +7,7 @@ function SignInModal({ setCreateAccount, setSignUp}) {
     const [loginEmail,setLoginEmail] = useState("");
     const [loginPassword,setLoginPassword] = useState("");
     const [loginStatus,setLoginStatus] = useState("");
+    const [closer,setCloser] = useState("notmodal");
 
     const Login = () => {
         if (loginEmail === "" || loginPassword === ""){
@@ -27,7 +28,7 @@ function SignInModal({ setCreateAccount, setSignUp}) {
             {
                 setCreateAccount(response.data[0].Username);
                 setSignUp("");
-                setLoginStatus("Logged In.")
+                setCloser("modal");
                 setLoginEmail("")
                 setLoginPassword("")
             }
@@ -63,7 +64,7 @@ function SignInModal({ setCreateAccount, setSignUp}) {
                                 </center>
                             </div>
 
-                            <button type="button" className="btn btn-dark" id="caHolder" onClick={Login}>SIGN IN</button>
+                            <button type="button" className="btn btn-dark" id="caHolder"  data-bs-dismiss={closer} onClick={Login}>SIGN IN</button>
                         </div>
                     </div>
                 </div>
