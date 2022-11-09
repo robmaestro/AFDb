@@ -91,7 +91,7 @@ a {
 .upcoming-movies,
 .browse-movies,
 .movie-genres-content,
-.list-collection-container {
+.list-collection-container, .films-all {
     display: flex;
     flex-direction: column;
     font-size: 15px;
@@ -514,6 +514,7 @@ min-height: 230px;
 
 
 @media (width >=320px) and (width <=480px) {
+    
     .banner-header {
         padding: 0px;
         gap: 0;
@@ -521,7 +522,7 @@ min-height: 230px;
 
     .webpage-text {
         font-size: 25px;
-        padding: 25px;
+        padding: 0px 20px 20px 20px;
         display: flex;
         justify-content: center;
     }
@@ -550,7 +551,7 @@ min-height: 230px;
 
     .content-body-container {
         margin: 0;
-        max-width:95%;
+        max-width:100%;
     }
 
     .featured-movies,
@@ -564,6 +565,11 @@ min-height: 230px;
         gap: 10px;
         padding: 10px 0;
         width:90%;
+    }
+
+    .list-collection-container, .films-all{
+        width:100%;
+        padding: 0 20px 20px 20px;
     }
 
     .featured-movies-content,
@@ -616,5 +622,42 @@ min-height: 230px;
     .image-overlay{
         font-size:23px;
     }
+
+    .list-collection{
+        display: flex;
+        overflow-x: auto;
+    }
     
+    .footer-link-list{
+        font-size:10px;
+    }
+
+    .main-body {
+        align-items: flex-start;
+    }
+
+    .navbar-collapse{
+        padding: 10px;
+        border-bottom: white solid 1px;
+    }
+
+    .navbar-container{
+        width:100%;
+    }
+
+    .navbar-container .container-fluid{
+        gap:10px;
+    }
+
+    .navbar-toggler{
+        position:absolute;
+        left:5%;
+    }
+
+    .navbar-head{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+    }
 }

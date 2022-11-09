@@ -73,7 +73,6 @@ export default function Body() {
                     <div className="featured-movies">
                         <div className="collection-title d-flex justify-content-between">
                             <span>FEATURED MOVIES</span>
-                            <a href="#" id="more-link">MORE</a>
                         </div>
                         <div className="featured-movies-content">
                             <img alt="movie poster" className="featured-movies-content-images" src="https://m.media-amazon.com/images/M/MV5BNDIzNDU0YzEtYzE5Ni00ZjlkLTk5ZjgtNjM3NWE4YzA3Nzk3XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg" />
@@ -86,7 +85,6 @@ export default function Body() {
                     <div className="upcoming-movies">
                         <div className="collection-title d-flex justify-content-between">
                             <span>UPCOMING MOVIES</span>
-                            <a href="#" id="more-link">MORE</a>
                         </div>
                         <div className="upcoming-movies-content">
                             <img alt="movie poster" className="upcoming-movies-content-images" src="https://m.media-amazon.com/images/M/MV5BNDIzNDU0YzEtYzE5Ni00ZjlkLTk5ZjgtNjM3NWE4YzA3Nzk3XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg" />
