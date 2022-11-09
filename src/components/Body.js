@@ -16,6 +16,11 @@ export default function Body() {
         let path = '/films';
         navigate(path);
     }
+
+    const toGenre = (Genre) => {
+        let path = '/genre';
+        navigate(path,{state:{genre:Genre}})
+    }
     return (
         <>
             <div className="main-body">
@@ -120,9 +125,9 @@ export default function Body() {
                         </div>
 
                         <div className="movie-genres-list">
-                            <div className="movie-genre">
+                            <div className="movie-genre"  onClick={() => toGenre("Action")}>
                                 <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" />
-                                <a href="#">
+                                <a>
                                     <div className="image-overlay">
                                         <div className="image-overlay-text">
                                             Action
@@ -130,7 +135,7 @@ export default function Body() {
                                     </div>
                                 </a>
                             </div>
-                            <div className="movie-genre">
+                            <div className="movie-genre" onClick={() => toGenre("Comedy")}>
                                 <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_FMjpg_UX1000_.jpg" />
                                 <a href="#">
                                     <div className="image-overlay">
@@ -140,7 +145,7 @@ export default function Body() {
                                     </div>
                                 </a>
                             </div>
-                            <div className="movie-genre">
+                            <div className="movie-genre" onClick={() => toGenre("Horror")}>
                                 <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BMjUxMDQwNjcyNl5BMl5BanBnXkFtZTgwNzcwMzc0MTI@._V1_FMjpg_UX1000_.jpg" />
                                 <a href="#">
                                     <div className="image-overlay">
@@ -150,7 +155,7 @@ export default function Body() {
                                     </div>
                                 </a>
                             </div>
-                            <div className="movie-genre">
+                            <div className="movie-genre" onClick={() => toGenre("Sci-Fi")}>
                                 <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BMjEwMzMxODIzOV5BMl5BanBnXkFtZTgwNzg3OTAzMDI@._V1_FMjpg_UX1000_.jpg" />
                                 <a href="#">
                                     <div className="image-overlay">
@@ -160,7 +165,7 @@ export default function Body() {
                                     </div>
                                 </a>
                             </div>
-                            <div className="movie-genre">
+                            <div className="movie-genre" onClick={() => toGenre("Fantasy")}>
                                 <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BYzJjMTYyMjQtZDI0My00ZjE2LTkyNGYtOTllNGQxNDMyZjE0XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg" />
                                 <a href="#">
                                     <div className="image-overlay">
@@ -170,7 +175,7 @@ export default function Body() {
                                     </div>
                                 </a>
                             </div>
-                            <div className="movie-genre">
+                            <div className="movie-genre" onClick={() => toGenre("Romance")}>
                                 <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BZjYzNTMzZTAtNzMzOS00ZWRhLTg3MWMtM2NjYmJmZjU4NmFhL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMzI3NjY2ODc@._V1_.jpg" />
                                 <a href="#">
                                     <div className="image-overlay">
@@ -180,7 +185,7 @@ export default function Body() {
                                     </div>
                                 </a>
                             </div>
-                            <div className="movie-genre">
+                            <div className="movie-genre" onClick={() => toGenre("Thriller")}>
                                 <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BZWFlYmY2MGEtZjVkYS00YzU4LTg0YjQtYzY1ZGE3NTA5NGQxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg" />
                                 <a href="#">
                                     <div className="image-overlay">
@@ -190,7 +195,7 @@ export default function Body() {
                                     </div>
                                 </a>
                             </div>
-                            <div className="movie-genre">
+                            <div className="movie-genre" onClick={() => toGenre("Drama")}>
                                 <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BZGVmY2RjNDgtMTc3Yy00YmY0LTgwODItYzBjNWJhNTRlYjdkXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_FMjpg_UX1000_.jpg" />
                                 <a href="#">
                                     <div className="image-overlay">
@@ -200,7 +205,7 @@ export default function Body() {
                                     </div>
                                 </a>
                             </div>
-                            <div className="movie-genre">
+                            <div className="movie-genre" onClick={() => toGenre("Adventure")}>
                                 <img alt="movie poster" className="movie-genre-images" src="https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" />
                                 <a href="#">
                                     <div className="image-overlay">
