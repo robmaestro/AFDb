@@ -12,7 +12,7 @@ function Modal() {
             email:emailReg, 
             username: usernameReg,
             password: passwordReg
-        }).then((response) => {
+        }).then((response) => { 
             console.log(response);
         })
     }
