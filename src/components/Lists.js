@@ -6,6 +6,26 @@ import FilmList from "./FilmList";
 export default function Films() {
 
 
+    const [isLoading, setIsLoading] = React.useState(true);
+    const [names, setNames] = React.useState([]);
+
+    React.useEffect(() => {
+        const url = "http://localhost:5000/mywatchlist";
+        fetch(url)
+            .then((response) => response.json())
+            .then((json) => setNames(json['results']))
+            .catch((error) => console.log(error));
+    }, []);
+
+    React.useEffect(() => {
+        if (names.length !== 0) {
+            setIsLoading(false);
+        }
+        else {
+            setIsLoading(true);
+        }
+    }, [names]);
+
     return (
         <>
             <div className="main-body">
@@ -14,32 +34,29 @@ export default function Films() {
                 <div className="list-collection-container">
                     <div className="collection-title">
                         <span>Your List</span>
+
                     </div>
-                    <div className="list-collection">
-                        <img alt="movie poster" className="list-collection-images" src="https://lumiere-a.akamaihd.net/v1/images/avatar_800x1200_208c9665.jpeg?region=0%2C0%2C800%2C1200" />
-                        <img alt="movie poster" className="list-collection-images" src="https://m.media-amazon.com/images/M/MV5BYTE1ZTBlYzgtNmMyNS00ZTQ2LWE4NjEtZjUxNDJkNTg2MzlhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg" />
-                        <img alt="movie poster" className="list-collection-images" src="https://m.media-amazon.com/images/M/MV5BNWMxYTZlOTUtZDExMi00YzZmLTkwYTMtZmM2MmRjZmQ3OGY4XkEyXkFqcGdeQXVyMTAwMzUyMzUy._V1_.jpg" />
-                        <img alt="movie poster" className="list-collection-images" src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" />
-                        <img alt="movie poster" className="list-collection-images" src="https://m.media-amazon.com/images/M/MV5BNjgwNzAzNjk1Nl5BMl5BanBnXkFtZTgwMzQ2NjI1OTE@._V1_.jpg" />
-                        <img alt="movie poster" className="list-collection-images" src="https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_.jpg" />
-                        <img alt="movie poster" className="list-collection-images" src="https://m.media-amazon.com/images/M/MV5BMGUwZjliMTAtNzAxZi00MWNiLWE2NzgtZGUxMGQxZjhhNDRiXkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_.jpg" />
-                        <img alt="movie poster" className="list-collection-images" src="https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg" />
-                        <img alt="movie poster" className="list-collection-images" src="https://m.media-amazon.com/images/M/MV5BMzQxNzQzOTQwM15BMl5BanBnXkFtZTgwMDQ2NTcwODM@._V1_.jpg" />
-                        <img alt="movie poster" className="list-collection-images" src="https://m.media-amazon.com/images/M/MV5BMjUxMDQwNjcyNl5BMl5BanBnXkFtZTgwNzcwMzc0MTI@._V1_FMjpg_UX1000_.jpg" />
-                        <img alt="movie poster" className="list-collection-images" src="https://m.media-amazon.com/images/M/MV5BMjMwNDkxMTgzOF5BMl5BanBnXkFtZTgwNTkwNTQ3NjM@._V1_FMjpg_UX1000_.jpg" />
-                        <img alt="movie poster" className="list-collection-images" src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg" />
-                        <img alt="movie poster" className="list-collection-images" src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UX1000_.jpg" />
-                        <img alt="movie poster" className="list-collection-images" src="https://m.media-amazon.com/images/M/MV5BN2YyZjQ0NTEtNzU5MS00NGZkLTg0MTEtYzJmMWY3MWRhZjM2XkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_FMjpg_UX1000_.jpg" />
-                        <img alt="movie poster" className="list-collection-images" src="https://m.media-amazon.com/images/M/MV5BOTgxMDQwMDk0OF5BMl5BanBnXkFtZTgwNjU5OTg2NDE@._V1_.jpg" />
-                        <img alt="movie poster" className="list-collection-images" src="https://m.media-amazon.com/images/M/MV5BZjY5ZjQyMjMtMmEwOC00Nzc2LTllYTItMmU2MzJjNTg1NjY0XkEyXkFqcGdeQXVyNjQ1MTMzMDQ@._V1_FMjpg_UX1000_.jpg" />
-                        <img alt="movie poster" className="list-collection-images" src="https://m.media-amazon.com/images/M/MV5BMjI0MDMzNTQ0M15BMl5BanBnXkFtZTgwMTM5NzM3NDM@._V1_FMjpg_UX1000_.jpg" />
-                        <img alt="movie poster" className="list-collection-images" src="https://m.media-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg" />
-                        <img alt="movie poster" className="list-collection-images" src="https://m.media-amazon.com/images/M/MV5BY2NkZjEzMDgtN2RjYy00YzM1LWI4ZmQtMjIwYjFjNmI3ZGEwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg" />
-                        <img alt="movie poster" className="list-collection-images" src="https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_.jpg" />
-                        <img alt="movie poster" className="list-collection-images" src="https://m.media-amazon.com/images/M/MV5BYzJjMTYyMjQtZDI0My00ZjE2LTkyNGYtOTllNGQxNDMyZjE0XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg" />
-                        <img alt="movie poster" className="list-collection-images" src="https://m.media-amazon.com/images/M/MV5BZDVkZmI0YzAtNzdjYi00ZjhhLWE1ODEtMWMzMWMzNDA0NmQ4XkEyXkFqcGdeQXVyNzYzODM3Mzg@._V1_FMjpg_UX1000_.jpg" />
-                        <img alt="movie poster" className="list-collection-images" src="https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" />
-                        <img alt="movie poster" className="list-collection-images" src="https://m.media-amazon.com/images/M/MV5BYTdiOTIyZTQtNmQ1OS00NjZlLWIyMTgtYzk5Y2M3ZDVmMDk1XkEyXkFqcGdeQXVyMTAzMDg4NzU0._V1_FMjpg_UX1000_.jpg" />
+                    
+                    <div class="row row-cols-1 row-cols-md-1 g-4">
+                        <div class="col max-width">
+                            <center>
+                            {isLoading ? (<h1>Loading</h1>) : (
+                                names.map((_names) => (<>
+                                    <div className="card watchlist-card">
+                                        <center>
+                                        <img src={_names.Poster} className="watchlist-content-images" alt="..." />
+                                        </center>
+                                        <div class="card-body">
+                                            <span className="watchlist-title-text">{_names.Title}</span>    <span className="watchlist-year-text">{_names.Year} </span>Directed by:<span className="watchlist-director-text"> {_names.Director}</span> 
+                                            <p class="card-text">{_names.Plot}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </>
+                                ))
+                            )}
+                            </center>
+                        </div>
                     </div>
                 </div>
             </div>

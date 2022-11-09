@@ -13,7 +13,9 @@
     font-weight: 300;
     overflow: hidden;
 }
-
+.black-text {
+    color: black
+}
 a {
     text-decoration: none;
     color: inherit;
@@ -143,15 +145,39 @@ a {
 }
 
 .films-content-images,
-.list-collection-images {
+.list-collection-images{
     width: 150px;
     height: auto;
     border: white solid 1px;
     min-height: 230px;
     margin: 1% 1%;
 }
+.watchlist-content-images {
+    width: 300px;
+    height: auto;
+    border: white solid 1px;
+    min-height: 230px;
+    margin: 1% 1%;
+}
+.max-width{
+    width: 100%;
+}
+.watchlist-card{
+    border: white solid 1px;
+    margin: 1rem 0;
+    width: 50%;
+}
 
-.films-content-images:hover {
+.watchlist-title-text{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.watchlist-director-text, .watchlist-year-text{
+
+    font-size: 25px;
+}
+.films-content-images:hover, .watchlist-content-images:hover {
     border: rgb(43, 58, 47) solid 1px;
 }
 
@@ -424,6 +450,10 @@ min-height: 230px;
 .navbar-links a:focus:after {
     width: 100%;
     left: 0%;
+}
+
+.watchlist-card{
+    background-color: #141414;
 }
 
 .navbar-links a:after {

@@ -9,17 +9,6 @@ import Swal from 'sweetalert2'
 function FilmDetails() {
     const { state } = useLocation();
 
-    const [emailReg, setEmailReg] = useState('');
-    const [usernameReg, setUsernameReg] = useState('');
-    const [passwordReg, setPasswordReg] = useState('');
-
-    const display = () => {
-        Swal.fire({
-            icon: 'success',
-            title: 'Added to watchlist.'
-          })
-        console.log(state.movieid + state.title + state.year + state.director + state.moviename + state.plot)
-    }
 
     const addtowatchlist = () => {
         Axios.post('http://localhost:5000/watchlist', {
