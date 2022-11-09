@@ -12,7 +12,7 @@ function FilmDetails() {
 
     const addtowatchlist = () => {
         Axios.post('http://localhost:5000/watchlist', {
-            movieid : state.movieid,
+            movieid: state.movieid,
             poster: state.moviename,
             title: state.title,
             year: state.year,
@@ -24,7 +24,7 @@ function FilmDetails() {
         Swal.fire({
             icon: 'success',
             title: 'Added to watchlist.'
-          })
+        })
     }
     return (
         <>

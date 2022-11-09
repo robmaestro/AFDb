@@ -3,7 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 import FilmList from "./FilmList";
 
-export default function Films() {
+export default function Lists() {
 
 
     const [isLoading, setIsLoading] = React.useState(true);

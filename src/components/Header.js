@@ -24,6 +24,8 @@ export default function Header() {
         navigate(path);
     }
 
+  
+
     return (
         <>
             <SignInModal setCreateAccount={setCreateAccount} setSignUp={setSignUp} />

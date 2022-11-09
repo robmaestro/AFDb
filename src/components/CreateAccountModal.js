@@ -1,13 +1,27 @@
 import { useState } from "react";
 import Axios from "axios";
+import Swal from 'sweetalert2'
 
 function Modal() {
+    const validator = require('validator')
 
     const [emailReg,setEmailReg] = useState('');
     const [usernameReg,setUsernameReg] = useState('');
     const [passwordReg, setPasswordReg] = useState('');
+    const [emailStatus, setEmailStatus] = useState('');
 
     const register = () =>{
+        if (emailReg === "" || usernameReg === "" || passwordReg === "") {
+            setEmailStatus("Invalid Empty fields.")
+        }
+        else if (!validator.isEmail(emailReg)) {
+            setEmailStatus("Invalid Email address.")
+        }
+        else {
+            Swal.fire({
+                icon: 'success',
+                title: 'Account created.'
+            })
         Axios.post('http://localhost:5000/register', {
             email:emailReg, 
             username: usernameReg,
@@ -16,7 +30,7 @@ function Modal() {
             console.log(response);
         })
     }
-
+    }
     return (
         <>
             <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -64,7 +78,9 @@ function Modal() {
                                 </div>
 
                             </div>
-
+                                    <center>
+                                        <h6>{emailStatus}</h6>
+                                    </center>
                             <button type="button" class="btn btn-dark" id="caHolder" onClick={register}>SIGN UP</button>
                         </div>
                     </div>
