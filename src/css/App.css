@@ -186,10 +186,10 @@ a {
 
 .watchlist-director-text, .watchlist-year-text{
 
-    font-size: 25px;
+    font-size: 25px;    
 }
-.films-content-images:hover, .watchlist-content-images:hover {
-    border: rgb(43, 58, 47) solid 1px;
+.films-content-images:hover, .watchlist-content-images:hover,.watchlist-card:hover {
+    border: rgb(43, 58, 47) solid 1px;  
 }
 
 .film-detail-image-holder{
