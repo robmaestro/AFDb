@@ -11,9 +11,8 @@ export default function Films() {
             <div className="main-body">
                 <Header />
                 <div className="films-all">
-                    <div className="collection-title d-flex justify-content-between">
+                    <div className="collection-title">
                         <span>FILMS</span>
-                        <a href="#" id="more-link">MORE</a>
                     </div>
                     <div className="films-content">
                         <FilmList />
