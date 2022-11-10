@@ -1,7 +1,7 @@
 import React from "react";
 import Header from './Header'
 import Footer from './Footer'
-import FilmList from "./FilmList";
+import DupliHeader from "./DupliHeader";
 
 export default function Lists() {
 
@@ -29,7 +29,7 @@ export default function Lists() {
     return (
         <>
             <div className="main-body">
-                <Header />
+                <DupliHeader />
 
                 <div className="list-collection-container">
                     <div className="collection-title">

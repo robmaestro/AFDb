@@ -1,8 +1,8 @@
-import Header from './Header'
+
 import Footer from './Footer'
+import DupliHeader from './DupliHeader';
 import { useLocation } from 'react-router-dom';
 import Axios from "axios";
-import { useState } from "react";
 import Swal from 'sweetalert2'
 
 
@@ -29,7 +29,7 @@ function FilmDetails() {
     return (
         <>
             <div className="main-body">
-                <Header />
+                <DupliHeader />
                 <div className="film-details-container">
                     <div className="row film-details-row">
                         <div className="col-md-6 film-detail-image-holder">
