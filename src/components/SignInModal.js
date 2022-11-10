@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Axios from "axios";
+import Swal from 'sweetalert2'
 
 
 function SignInModal({ setCreateAccount, setSignUp}) {
@@ -26,6 +27,10 @@ function SignInModal({ setCreateAccount, setSignUp}) {
             }
             else
             {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Successfully Login.'
+                })
                 setCreateAccount(response.data[0].Username);
                 setSignUp("");
                 setCloser("modal");
