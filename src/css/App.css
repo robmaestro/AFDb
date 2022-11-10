@@ -99,7 +99,8 @@ a {
 .upcoming-movies,
 .browse-movies,
 .movie-genres-content,
-.list-collection-container, .films-all {
+.list-collection-container, 
+.films-all {
     display: flex;
     flex-direction: column;
     font-size: 15px;
